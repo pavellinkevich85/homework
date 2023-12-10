@@ -6,7 +6,6 @@ def select(new_list):
         for x in range(i, len(new_list)):
             if new_list[x] < new_list[i]:
                 new_list[x], new_list[i] = new_list[i], new_list[x]
-
 select(list)
 print(list)
 
