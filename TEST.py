@@ -1,18 +1,19 @@
 
 list = [1, 2, 4, 7, -10 , 89, -100]
+new_list = ['Mama', 'Papa']
 
-def select(new_list):
-    for i in range(len(new_list)):
-        for x in range(i, len(new_list)):
-            if new_list[x] < new_list[i]:
-                new_list[x], new_list[i] = new_list[i], new_list[x]
-select(list)
-print(list)
+new_list.extend(list)
+print(new_list)
 
-def change(change_list):
-    for i in range(len(change_list)):
-        for x in range(i, len(change_list)):
-            change_list[x], change_list[i] = change_list[i], change_list[x]
+new_list.insert(4, 'vip')
+print(new_list)
 
-change(list)
-print(list)
+which = input('which word you want?: ')
+index = new_list.index(4)
+new_list.insert(index, '4')
+
+print(index + 1)
+for i in range(5):
+    new_list.append(-10)
+
+print(new_list.count(-10))
