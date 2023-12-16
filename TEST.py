@@ -53,7 +53,7 @@ del a[1:5]  # удаляет с индекса 1 по 4 (не 5!!)
             # то есть граница с 0 до 5! (а не с 1 до 5) удалил 1-4!
 print(a)
 
-new_list = [1, 2, 'ddd', ['qwerty', 43, 'zxcvb'], 23, 999]
-del new_list[1:5]
+new_list = [1, 2, 'ddd', ['qwerty', 43, 'zxcvb'], 23, 999, 10000]
+del new_list[2:5]
 print(new_list)
 
