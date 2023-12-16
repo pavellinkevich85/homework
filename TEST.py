@@ -1,19 +1,9 @@
 
 list = [1, 2, 4, 7, -10 , 89, -100]
-new_list = ['Mama', 'Papa']
+print(list[0:7:2])
 
-new_list.extend(list)
-print(new_list)
+a = [1, 2, 3]
+b1, b2, b3 = a
 
-new_list.insert(4, 'vip')
-print(new_list)
+print(b3, b1, b2)
 
-which = input('which word you want?: ')
-index = new_list.index(4)
-new_list.insert(index, '4')
-
-print(index + 1)
-for i in range(5):
-    new_list.append(-10)
-
-print(new_list.count(-10))
