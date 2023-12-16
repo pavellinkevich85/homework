@@ -4,20 +4,21 @@ second_sentence = input('Enter second sentens: ')
 
 
 new_list = []
+
 if first_sentence.count('!') > second_sentence.count('?'):
-    new_list.append(first_sentence)
-    new_list.append(second_sentence)
-    for f_list in new_list:
-        print(f_list, end = '')
+    new_list.extend([first_sentence, second_sentence])
+    for i_first in new_list:
+        print(i_first, end = '')
 
 if first_sentence.count('!') < second_sentence.count('?'):
-    new_list.append(second_sentence)
-    new_list.append(first_sentence)
-    for s_list in new_list:
-        print(s_list, end = '')
+    new_list.extend([second_sentence, first_sentence])
+    for i_second in new_list:
+        print(i_second, end = '')
+else:
+    print('OK!!!')
 
-if first_sentence.count('!') == second_sentence.count('?'):
-    print('Ой!')
+
+#print(new_list)
 
 
 
